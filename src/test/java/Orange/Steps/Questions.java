@@ -32,7 +32,7 @@ public class Questions {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String filename = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		File dest = new File("C:\\Automatizacion\\CapturasProyecto\\" + filename + ".png");
+		File dest = new File("C:\\Automatizacion\\CapturasProyectos\\" + filename + ".png");
 		try {
 			FileUtils.copyFile(scr, dest);
 		} catch (IOException e) {
